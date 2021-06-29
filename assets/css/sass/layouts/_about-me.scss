@@ -1,0 +1,27 @@
+.about-me{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    align-items: center;
+    border-bottom: solid 1px $gray;
+    &-info{
+        display: flex;
+    }
+    &__thumbnail{
+        width: 4rem;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    &-buttons{
+        align-items: center;
+    }
+    &-bio{
+        padding-left: 1rem;
+    }
+    @include mobile-view{
+        justify-content: center;
+        &-buttons{
+            display: none;
+        }
+    }
+}

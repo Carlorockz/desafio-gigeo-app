@@ -1,0 +1,20 @@
+.videos{
+    &__videos-container{
+        display: flex;
+        justify-content: center;
+    }
+    &__image{
+        width: 100%;
+        object-fit: cover;
+        height: 14rem;
+    } 
+    &__title{
+        margin-bottom: 1.5rem;
+    }
+    @include mobile-view{
+        text-align: center;
+    }
+}
+.videos-container.container-fluid{
+    padding: 1rem 3rem;
+}
